@@ -120,7 +120,7 @@ public class BufferedChannel implements IOChannel {
             return this.getLongFromInputBuffer(numBits);
 		} else {
 			String inputFromChannel = 
-					state.readString("Enter Inputs, the first of which must be an Integer: ");
+					state.readString("Enter Inputs, the first of Alif must be an Integer: ");
 			// Output directions if the user asks for "help"
 			if(inputFromChannel.toLowerCase().equals("help")) {
 				state.writeString("Type in a decimal, binary, or hexadecimal " +
